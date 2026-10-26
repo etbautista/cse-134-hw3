@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Space-Mono;
+    src: url("/public/assets/fonts/Space_Mono/SpaceMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Fira-Code;
+    src: url("/public/assets/fonts/Fira_Code/FiraCode-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /*colors from my style guide in figma*/ 
+    --primary-700: #0D0D0D;
+    --primary-600: #1A1A19;
+    --primary-500: #252422;
+    --primary-400: #464035;
+    --primary-300: #6C5E42;
+
+    --secondary-700: #8D3E20;
+    --secondary-600: #C24C1E;
+    --secondary-500: #EB5E28;
+    --secondary-400: #F97D4E;
+    --secondary-300: #FF9F7A;
+
+    --tertiary-700: #949089;
+    --tertiary-600: #B1ABA0;
+    --tertiary-500: #CCC5B9;
+    --tertiary-400: #E5DED2;
+    --tertiary-300: #F8F6F1;
+
+    --dark-700: #1A1A19;
+    --dark-600: #252422;
+    --dark-500: #403D39;
+    --dark-400: #655949;
+    --dark-300: #8D7453;
+
+    --light-700: #FCEEC0;
+    --light-600: #FCEEC0;
+    --light-500: #FFFCF2;
+    --light-400: #FFFDF5;
+    --light-300: #FFFEFA;
+
+    --shadow: rgba(0, 0, 0, 0.25);
+
+    /*typography*/
+    --font-primary: "Space-Mono", Courier, monospace;
+    --font-secondary: "Fira-Code", Consolas;
+
+    /*sizes & space*/
+}

@@ -1,0 +1,14 @@
+@import url("variables.css");
+
+body {
+    background-color: var(--light-500);
+    margin: 0;
+}
+
+nav {
+    background-color: var(--primary-500);
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
