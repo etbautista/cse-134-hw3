@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Space-Mono;
+    font-family: "Space-Mono";
     src: url("/public/assets/fonts/Space_Mono/SpaceMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: Fira-Code;
+    font-family: "Fira-Code";
     src: url("/public/assets/fonts/Fira_Code/FiraCode-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -48,9 +48,37 @@
 
     --shadow: rgba(0, 0, 0, 0.25);
 
+    --smalltxt: rgba(229, 222, 210, 0.33);
+
+    --design: #8D3E20;
+    --react: #66D2F1;
+    --css: #673B98;
+    --html: #DF5529;
+    --developer: #403D39;
+
     /*typography*/
     --font-primary: "Space-Mono", Courier, monospace;
     --font-secondary: "Fira-Code", Consolas;
 
-    /*sizes & space*/
+    /* @link https://utopia.fyi/space/calculator?c=375,10,1.2,1440,20,1.25,5,3,&s=0.75,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+    /*font sizes from utopia*/
+    --step--3: clamp(0.3617rem, 0.2637rem + 0.4181vw, 0.64rem);
+    --step--2: clamp(0.434rem, 0.3052rem + 0.5498vw, 0.8rem);
+    --step--1: clamp(0.5208rem, 0.3521rem + 0.7199vw, 1rem);
+    --step-0: clamp(0.625rem, 0.4049rem + 0.939vw, 1.25rem);
+    --step-1: clamp(0.75rem, 0.4639rem + 1.2207vw, 1.5625rem);
+    --step-2: clamp(0.9rem, 0.5292rem + 1.5822vw, 1.9531rem);
+    --step-3: clamp(1.08rem, 0.6006rem + 2.0453vw, 2.4414rem);
+    --step-4: clamp(1.296rem, 0.6778rem + 2.6378vw, 3.0518rem);
+    --step-5: clamp(1.5552rem, 0.7596rem + 3.3945vw, 3.8147rem);
+
+    /*sizes & space from utopia*/
+    --space-xs: clamp(0.5rem, 0.346rem + 0.6573vw, 0.9375rem);
+    --space-s: clamp(0.625rem, 0.4049rem + 0.939vw, 1.25rem);
+    --space-m: clamp(0.9375rem, 0.6074rem + 1.4085vw, 1.875rem);
+    --space-l: clamp(1.25rem, 0.8099rem + 1.8779vw, 2.5rem);
+    --space-xl: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
+    --space-2xl: clamp(2.5rem, 1.6197rem + 3.7559vw, 5rem);
+    --space-3xl: clamp(3.75rem, 2.4296rem + 5.6338vw, 7.5rem);
 }

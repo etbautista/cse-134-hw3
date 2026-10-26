@@ -25,13 +25,11 @@
             </svg>
         </a>
         <horizontal-container>
-            <div>
-                <a href="about-me.html">{aboutMe}</a>
-                <a href="projects-page.html">{projects}</a>
-                <a href="/public/assets/EthanGBautista-Resume.pdf" download="EthanGBautista-Resume">{resume}</a>
-                <a href="#contact">{contact}</a> 
-                <a href="experiments.html">experiments</a>
-            </div>
+            <a href="about-me.html">{aboutMe}</a>
+            <a href="projects-page.html">{projects}</a>
+            <a href="/public/assets/EthanGBautista-Resume.pdf" download="EthanGBautista-Resume">{resume}</a>
+            <a href="#contact">{contact}</a> 
+            <a href="experiments.html">experiments</a>
         </horizontal-container>
     </nav>
 
@@ -42,12 +40,12 @@
 
     <header>
         <horizontal-container>
-            <div>
+            <div class="hero-text">
                 <p>Hello! I'm Ethan, a</p>
                 <h1>Frontend Developer & UI/UX Designer</h1>
                 <hr>
                 <p>I'm Currently at...</p>
-                <p>UC San Diego, Pursuing B.S. Cognitive Science w/ Spec. Design & Interaction</p>
+                <p>UC San Diego Pursuing <br> B.S. Cognitive Science w/ Spec. Design & Interaction</p>
             </div>
             <picture>
                 <img src="public/assets/images/placeholder.png" alt="placeholder image"/>
@@ -58,37 +56,37 @@
     <main>
         <section id="technologies">
             <h2>My Toolbox</h2>
-            <p>const techStach = {}</p>
+            <p class="cosmetic-text">const techStach = {}</p>
             <horizontal-container>
                 <button>
-                    <img src="public/assets/icons/icon-placeholder.svg" alt="Slide Left">
+                    <img src="public/assets/icons/left.svg" alt="Slide Left">
                 </button>
                 <horizontal-container>
-                    <div>
+                    <div class="tech-container">
                         <hr>
                             <img src="public/assets/icons/icon-placeholder.svg" alt="The HTML Logo">
                             <p>HTML</p>
                         <hr>
                     </div>
-                    <div>
+                    <div class="tech-container">
                         <hr>
                             <img src="public/assets/icons/icon-placeholder.svg" alt="The CSS Logo">
                             <p>CSS</p>
                         <hr>
                     </div>
-                    <div>
+                    <div class="tech-container">
                         <hr>
                             <img src="public/assets/icons/icon-placeholder.svg" alt="The JavaScript Logo">
                             <p>JavaScript</p>
                         <hr>
                     </div>
-                    <div>
+                    <div class="tech-container">
                         <hr>
                             <img src="public/assets/icons/icon-placeholder.svg" alt="The ReactJs Logo">
                             <p>ReactJs</p>
                         <hr>
                     </div>
-                    <div>
+                    <div class="tech-container">
                         <hr>
                             <img src="public/assets/icons/icon-placeholder.svg" alt="The ReactNative Logo">
                             <p>ReactNative</p>
@@ -97,13 +95,13 @@
                     
                 </horizontal-container>
                 <button>
-                    <img src="public/assets/icons/icon-placeholder.svg" alt="Slide Left Right ">
+                    <img src="public/assets/icons/right.svg" alt="Slide Left Right ">
                 </button>
             </horizontal-container>
         </section>
 
         <section id="recent-projects">
-            <p>&lt;projects&gt;</p>
+            <p class="cosmetic-text">&lt;projects&gt;</p>
             <h2>
                 Here's What I've Been up to Recently...
             </h2>
@@ -111,19 +109,22 @@
             <project-container>
                  <a href="project-page-template.html">
                     <horizontal-container>
-                        <img src="/public/assets/images/placeholder.png" alt="project 1 thumbnail">
+                        <img src="/public/assets/images/landscape-placeholder.png" alt="project 1 thumbnail">
                         <div>
                             <h3>Project Name - Role</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie magna quis leo fringilla, id eleifend massa porta. Praesent eu lacinia leo, vitae laoreet urna. Cras sit amet sodales odio, sit amet ornare nunc.</p>
                             <horizontal-container>
-                                <project-tag>
+                                <project-tag data-status="designer">
                                     <p>Designer</p>
                                 </project-tag>
-                                <project-tag>
+                                <project-tag data-status="css">
                                     <p>CSS</p>
                                 </project-tag>
-                                <project-tag>
+                                <project-tag data-status="reactjs">
                                     <p>ReactJs</p>
+                                </project-tag>
+                                <project-tag data-status="developer">
+                                    <p>Developer</p>
                                 </project-tag>
                             </horizontal-container>
                         </div>
@@ -135,19 +136,22 @@
             <project-container>
                  <a href="project-page-template.html">
                     <horizontal-container>
-                        <img src="/public/assets/images/placeholder.png" alt="project 2 thumbnail">
+                        <img src="/public/assets/images/landscape-placeholder.png" alt="project 2 thumbnail">
                         <div>
                             <h3>Project Name - Role</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie magna quis leo fringilla, id eleifend massa porta. Praesent eu lacinia leo, vitae laoreet urna. Cras sit amet sodales odio, sit amet ornare nunc.</p>
                             <horizontal-container>
-                                <project-tag>
+                                <project-tag data-status="designer">
                                     <p>Designer</p>
                                 </project-tag>
-                                <project-tag>
+                                <project-tag data-status="css">
                                     <p>CSS</p>
                                 </project-tag>
-                                <project-tag>
+                                <project-tag data-status="reactjs">
                                     <p>ReactJs</p>
+                                </project-tag>
+                                <project-tag data-status="developer">
+                                    <p>Developer</p>
                                 </project-tag>
                             </horizontal-container>
                         </div>
@@ -159,19 +163,22 @@
             <project-container>
                  <a href="project-page-template.html">
                     <horizontal-container>
-                        <img src="/public/assets/images/placeholder.png" alt="project 3 thumbnail">
+                        <img src="/public/assets/images/landscape-placeholder.png" alt="project 3 thumbnail">
                         <div>
                             <h3>Project Name - Role</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie magna quis leo fringilla, id eleifend massa porta. Praesent eu lacinia leo, vitae laoreet urna. Cras sit amet sodales odio, sit amet ornare nunc.</p>
                             <horizontal-container>
-                                <project-tag>
+                                <project-tag data-status="designer">
                                     <p>Designer</p>
                                 </project-tag>
-                                <project-tag>
+                                <project-tag data-status="css">
                                     <p>CSS</p>
                                 </project-tag>
-                                <project-tag>
+                                <project-tag data-status="reactjs">
                                     <p>ReactJs</p>
+                                </project-tag>
+                                <project-tag data-status="developer">
+                                    <p>Developer</p>
                                 </project-tag>
                             </horizontal-container>
                         </div>
@@ -183,25 +190,27 @@
 
 
             <a href="projects-page.html">{View All Here}</a>
-            <p>&lt;/projects&gt;</p>
+            <p class="cosmetic-text">&lt;/projects&gt;</p>
         </section>
 
         <section id="about-me">
-            <p>&lt;aboutMe&gt;</p>
-            <h2>In my free time I'm a...</h2>
-                <horizontal-container>
-                    <div>
-                        <h3><strong>Hobby 1</strong>, <em>Hobby 2</em>, and a <span id="hobby-3-text">Hobby 3</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie magna quis leo fringilla, id eleifend massa porta. Praesent eu lacinia leo, vitae laoreet urna. Cras sit amet sodales odio, sit amet ornare nunc. Nunc eu eleifend ipsum. Maecenas at cursus enim.Praesent eu lacinia leo, vitae laoreet urna. Cras sit amet sodales odio, sit amet ornare nunc. Nunc eu eleifend ipsum. Maecenas at cursus enim.</p>
-                    </div>
-
-                    <animated-sliding-carousel>
-                        <img src="public/assets/images/placeholder.png" alt="picture of hobby 1"/>
-                        <img src="public/assets/images/placeholder.png" alt="picture of hobby 2"/>
-                        <img src="public/assets/images/placeholder.png" alt="picture of hobby 3"/>
-                    </animated-sliding-carousel>
-                </horizontal-container>
-            <p>&lt;/aboutMe&gt;</p>
+            <p class="cosmetic-text">&lt;aboutMe&gt;</p>
+            <indent>
+                <h2>In my free time I'm a...</h2>
+                    <horizontal-container>
+                        <div>
+                            <h3><strong>Hobby 1</strong>, <em>Hobby 2</em>, and a <span id="hobby-3-text">Hobby 3</span></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie magna quis leo fringilla, id eleifend massa porta. Praesent eu lacinia leo, vitae laoreet urna. Cras sit amet sodales odio, sit amet ornare nunc. Nunc eu eleifend ipsum. Maecenas at cursus enim.Praesent eu lacinia leo, vitae laoreet urna. Cras sit amet sodales odio, sit amet ornare nunc. Nunc eu eleifend ipsum. Maecenas at cursus enim.</p>
+                        </div>
+    
+                        <animated-sliding-carousel>
+                            <img src="public/assets/images/placeholder.png" alt="picture of hobby 1"/>
+                            <img src="public/assets/images/placeholder.png" alt="picture of hobby 2"/>
+                            <img src="public/assets/images/placeholder.png" alt="picture of hobby 3"/>
+                        </animated-sliding-carousel>
+                    </horizontal-container>
+                <p class="cosmetic-text">&lt;/aboutMe&gt;</p>
+            </indent>
         </section>
     </main>
 
@@ -229,7 +238,7 @@
 
             <form-field>
                 <label for="message">message</label>
-                <textarea id="message" name="message" placeholder="share your thoughts..." required> </textarea>
+                <textarea id="message" name="message" placeholder="share your thoughts..." required></textarea>
             </form-field>
 
             <button type="submit">send</button>
@@ -253,7 +262,7 @@
         </horizontal-container>
 
         <hr>
-        <p>//built with you in mind &lt;3 </p>
+        <small>//built with you in mind &lt;3 </small>
     </footer>
 
     <hello-log></hello-log>
